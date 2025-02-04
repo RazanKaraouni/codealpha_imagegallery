@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Flowers Gallery</h1>
+
+    <div class="gallery">
+        <img src="Image1.jpeg" alt="Image 1" onclick="openLightbox(0)">
+        <img src="Image2.jpeg" alt="Image 2" onclick="openLightbox(1)">
+        <img src="Image3.jpeg" alt="Image 3" onclick="openLightbox(2)">
+        <img src="Image4.jpeg" alt="Image 4" onclick="openLightbox(3)">
+        <img src="Image5.jpeg" alt="Image 5" onclick="openLightbox(4)">
+        <img src="Image6.jpeg" alt="Image 6" onclick="openLightbox(5)">
+        <img src="images7.jpeg" alt="Image 7" onclick="openLightbox(6)">
+        <img src="images8.jpeg" alt="Image 8" onclick="openLightbox(7)">
+        <img src="images9.jpeg" alt="Image 9" onclick="openLightbox(8)">
+        <img src="images10.jpeg" alt="Image 10" onclick="openLightbox(9)">
+        <img src="images11.jpeg" alt="Image 11" onclick="openLightbox(10)">
+        <img src="images12.jpeg" alt="Image 12" onclick="openLightbox(11)">
+
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImg" class="lightbox-content">
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+</body>
+<footer>
+    <footer>
+        <p>© 2025 Razan | All Rights Reserved</p>
+    </footer>
+    
+</footer>
+</html>
